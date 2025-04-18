@@ -1,0 +1,13 @@
+Fri, Apr 18, 2025  7:36:50 PM: 
+ hashmap.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:58:37: error: invalid operands to binary % (have 'Pair * {aka struct Pair *}' and 'long int')
+             current = (current + 1) % map->capacity;
+                       ~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~
+hashmap.c:60:12: error: 'Pair {aka struct Pair}' has no member named 'next'
+         par->next = map->buckets[idx];
+            ^~
+eeef3b7
