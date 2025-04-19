@@ -70,6 +70,7 @@ void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
     int old_capacity = map->capacity;
     map->capacity *= 2;
+    map->current = -1;
     Pair ** old_buckets = map->buckets;
     map->buckets = (Pair **)calloc(map->capacity, sizeof(Pair *));
     map->size = 0;
