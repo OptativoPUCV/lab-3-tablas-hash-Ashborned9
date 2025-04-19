@@ -78,8 +78,6 @@ void enlarge(HashMap * map) {
         }
     }
     free(old_buckets);
-
-
 }
 
 
@@ -92,7 +90,21 @@ HashMap * createMap(long capacity) {
     return map;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) {
+    int idx = hash(key, map->capacity);
+    while ( map->buckets[idx] != NULL) {
+        if (is_equal(map->buckets[idx]->key, key)) {
+            free(map->buckets[idx]);
+            map->buckets[idx] = NULL;
+            map->size--;
+            return;
+        }
+        idx = (idx + 1) % map->capacity;
+    }
+    if (map->buckets[idx] == NUL) {
+        return;
+    }
+
 
 
 }

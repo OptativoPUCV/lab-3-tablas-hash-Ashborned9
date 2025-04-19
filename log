@@ -35,3 +35,14 @@ Sat, Apr 19, 2025  3:33:40 PM:
  tests:  6|3
 total_score: 40/70
 7cf4a67
+Sat, Apr 19, 2025  3:40:27 PM: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:104:30: error: 'NUL' undeclared (first use in this function)
+     if (map->buckets[idx] == NUL) {
+                              ^~~
+hashmap.c:104:30: note: each undeclared identifier is reported only once for each function it appears in
+ef0ae83
