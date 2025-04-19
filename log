@@ -11,3 +11,9 @@ hashmap.c:60:12: error: 'Pair {aka struct Pair}' has no member named 'next'
          par->next = map->buckets[idx];
             ^~
 eeef3b7
+Sat, Apr 19, 2025  3:01:05 PM: 
+ hashmap.c | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+ tests:  4|5
+total_score: 20/70
+397cb7b
