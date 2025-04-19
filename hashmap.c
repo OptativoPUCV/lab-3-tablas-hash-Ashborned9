@@ -52,6 +52,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         while (map->buckets[idx] != NULL) {
             if (is_equal(map->buckets[idx]->key, key)) {
                 map->buckets[idx]->value = value;
+                map->current
                 return;
             }
             idx = (idx + 1) % map->capacity;
@@ -59,6 +60,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         
         map->buckets[idx] = par;
         map->size++;
+        map->current = idx;
     }
 
 
