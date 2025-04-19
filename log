@@ -120,3 +120,9 @@ hashmap.c:56:17: error: expected ';' before 'return'
                  ^~~~~~
 cc1.exe: all warnings being treated as errors
 c57d88f
+Sat, Apr 19, 2025  4:07:38 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+094f47d
