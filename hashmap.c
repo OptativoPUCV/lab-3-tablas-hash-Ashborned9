@@ -101,7 +101,7 @@ void eraseMap(HashMap * map,  char * key) {
         }
         idx = (idx + 1) % map->capacity;
     }
-    if (map->buckets[idx] == NUL) {
+    if (map->buckets[idx] == NULL) {
         return;
     }
 

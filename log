@@ -46,3 +46,9 @@ hashmap.c:104:30: error: 'NUL' undeclared (first use in this function)
                               ^~~
 hashmap.c:104:30: note: each undeclared identifier is reported only once for each function it appears in
 ef0ae83
+Sat, Apr 19, 2025  3:40:50 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|3
+total_score: 40/70
+3f84b4e
