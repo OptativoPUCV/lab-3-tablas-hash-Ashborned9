@@ -107,9 +107,11 @@ Pair * searchMap(HashMap * map,  char * key) {
     int idx = hash(key, map->capacity);
     while (map->buckets[idx] != NULL) {
         if (map->buckets[idx]->key != NULL && is_equal(map->buckets[idx]->key, key)) {
+            map->current = idx;
             return map->buckets[idx];
         }
         idx = (idx + 1) % map->capacity;
+        
     }   
     return NULL;
 }
